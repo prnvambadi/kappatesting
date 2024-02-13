@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+
+}
+
+
+body {
+  color: rgb(var(--foreground-rgb));
+  overflow: none;
+
+
+}
+
+main {
+  min-height: 100vh;
+}
+@layer utilities {
+  @screen md {
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  @screen sm {
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  }
+}
